@@ -30,7 +30,6 @@ class GradeStore extends EventEmitter{
       });
       this.on('CHANGE',()=>{
         console.log("store_assignment", _assignments);
-        console.log('_assignmentsTotScore:',_assignmentsTotScore )
         Storage.write('assignments',_assignments);
 
       })
