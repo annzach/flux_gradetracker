@@ -16,7 +16,7 @@ export default class GradeTable extends Component{
     console.log(awardedpoints);
     console.log(totalpoints);
     let percent = (awardedpoints)/(totalpoints)*100;
-    if(percent >= 90)
+    if(percent >= 90) 
       return 'A';
     else if(percent < 90 && percent >= 80)
       return 'B';
@@ -26,6 +26,7 @@ export default class GradeTable extends Component{
       return 'D';
     else
       return 'F'
+
   }
   render(){
     const {assignments} = this.props;
