@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import GradeTable from './GradeTable'
 import GradeStore from '../stores/GradeStore'
 
-//A smart component as it changes the state.
+
 export default class GradeContainer extends Component{
   constructor(props){
     super(props);

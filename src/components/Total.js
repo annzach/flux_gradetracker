@@ -11,17 +11,16 @@ export default class Total extends Component{
     }
 
   }
-  total(){
-    console.log("total");
+  total(assign){
+    console.log("total",assign);
+ 
   }
   
   render(){
     let {assign} = this.state;
     console.log("assign gradestor",assign);
-/*    const {assignments} = this.props;
-    console.log("assignments",assignments);*/
     return (
-        <button onClick={this.total} className="btn btn-success">Total</button>
+        <button onClick={this.total(assign)} className="btn btn-success">Total</button>
       )
 
   }

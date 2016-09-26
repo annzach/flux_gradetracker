@@ -5,8 +5,6 @@ export default class GradeTable extends Component{
   constructor(props){
     super(props);
     this.grade = this.grade.bind(this);
-
-
   }
   
   _delete(id){
