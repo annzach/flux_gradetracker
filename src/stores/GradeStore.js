@@ -3,7 +3,6 @@ import {EventEmitter} from 'events';
 import Storage from '../Storage';
 
  let _assignments = Storage.read('assignments')||[]; 
- let _assignmentsTotScore = _assignments.reduce((prev, curr) => prev.pointsawarded + curr.pointsawarded);
 class GradeStore extends EventEmitter{
   constructor(){
     super();
